@@ -4,79 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .product__photo {
-            display: flex;
-            justify-content: space-between;
-        }
-        .photo-container {
-            width: 50%;
-        }
-        .photo-main img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .photo-album ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-        .photo-album li {
-            margin: 5px;
-        }
-        .photo-album img {
-            width: 60px;
-            border-radius: 5px;
-        }
-        .product-info {
-            width: 45%;
-        }
-        .price {
-            font-size: 24px;
-            color: red;
-            font-weight: bold;
-        }
-        .variant {
-            display: flex;
-            gap: 10px;
-        }
-        .variant img {
-            width: 30px;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-        .description {
-            margin-top: 20px;
-        }
-        .add-to-cart {
-            display: block;
-            text-align: center;
-            background: red;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <h1>Apple Varieties</h1>
+    </header>
+    
+    <section class="product">
         <div class="product__photo">
             <div class="photo-container">
                 <div class="photo-main">
@@ -84,34 +19,34 @@
                 </div>
                 <div class="photo-album">
                     <ul>
-                        <li><img src="apple1.jpg" alt="Apple View 1"></li>
-                        <li><img src="apple2.jpg" alt="Apple View 2"></li>
-                        <li><img src="apple3.jpg" alt="Apple View 3"></li>
+                        <li><img src="green-apple1.jpg" alt="Green Apple 1"></li>
+                        <li><img src="green-apple2.jpg" alt="Green Apple 2"></li>
+                        <li><img src="green-apple3.jpg" alt="Green Apple 3"></li>
                     </ul>
                 </div>
-            </div>
-            <div class="product-info">
-                <h2>Delicious Apples</h2>
-                <p class="price">$7.93</p>
-                <h3>Select a Color</h3>
-                <div class="variant">
-                    <img src="green-apple.jpg" alt="Green">
-                    <img src="yellow-apple.jpg" alt="Yellow">
-                    <img src="orange-apple.jpg" alt="Orange">
-                    <img src="red-apple.jpg" alt="Red">
-                </div>
-                <div class="description">
-                    <h3>BENEFITS</h3>
-                    <ul>
-                        <li>Apples are nutritious</li>
-                        <li>Good for weight loss</li>
-                        <li>Promotes bone health</li>
-                        <li>Linked to lower risk of diabetes</li>
-                    </ul>
-                </div>
-                <a href="#" class="add-to-cart">ADD TO CART</a>
             </div>
         </div>
-    </div>
+        <div class="product__details">
+            <h2>Delicious Apples</h2>
+            <p class="price">$7.93</p>
+            <div class="variant">
+                <p>Select a color:</p>
+                <img src="green-icon.png" alt="Green Apple">
+                <img src="yellow-icon.png" alt="Yellow Apple">
+                <img src="orange-icon.png" alt="Orange Apple">
+                <img src="red-icon.png" alt="Red Apple">
+            </div>
+            <div class="description">
+                <h3>BENEFITS</h3>
+                <ul>
+                    <li>Apples are nutritious</li>
+                    <li>May be good for weight loss</li>
+                    <li>May be good for bone health</li>
+                    <li>Linked to a lower risk of diabetes</li>
+                </ul>
+            </div>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+    </section>
 </body>
 </html>
